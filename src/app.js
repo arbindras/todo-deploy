@@ -5,7 +5,7 @@ import cors from "cors";
 
 const app = express();
 
-app.use(cors({ origin: "http://localhost:5173" }));
+app.use(cors({ origin: "https://todo-frontend-seven-chi.vercel.app" }));
 app.use(express.json());
 app.get("/", (req, res) => {
   res.send("hello");
